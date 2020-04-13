@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_margin="@dimen/padding_10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:elevation="@dimen/padding_10"
+        android:background="@color/color_white_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/corner_radius">
+        <LinearLayout
+            android:background="@color/color_white_gray"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@color/color_white_gray"
+                android:id="@+id/epname"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Episode 1"
+                android:padding="@dimen/padding_20"/>
+            <ImageView
+                android:layout_marginRight="@dimen/padding_10"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:id="@+id/play_ep"
+                android:src="@drawable/ic_play"/>
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/padding_20"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:id="@+id/download_ep"
+                android:tint="@color/successColor"
+                android:src="@drawable/ic_download"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
